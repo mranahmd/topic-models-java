@@ -6,8 +6,8 @@ Currently it includes the implementation of Entity-Topic models [2][3], the Auth
 The code shared in this repository is inspired from the simple single file implementation of Gibbs Sampler for LDA shared [here](http://www.arbylon.net/resources.html).
 
 You can compile the source with the `compile-all.sh` shell script. <br>
-As a demonstration the Ci-Lda model is trained on the data provided in [`data/trial-et`](https://github.com/mranahmd/topic-models-java/tree/master/data/trial-et), using the command: <br>
-`java -cp bin/ CiLdaGibbsSampler data/trial-et/non-entity-term-index data/trial-et/non-entity-vocab data/trial-et/entity-term-index data/trial-et/entity-vocab 25 0.01 0.01` 
+As a demonstration the Ci-Lda model is trained on the data provided in [`data/trial-et`](https://github.com/mranahmd/topic-models-java/tree/master/data/trial-et), using a command 'like': <br>
+`java -cp bin/ CiLdaGibbsSampler data/trial-et/non-entity-term-index data/trial-et/non-entity-vocab data/trial-et/entity-term-index data/trial-et/entity-vocab 25 0.01 0.01 0.01` 
 
 For more topic models and their implementations check [here](http://mimno.infosci.cornell.edu/topics.html).
 
