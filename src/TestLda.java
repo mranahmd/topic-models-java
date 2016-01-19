@@ -45,7 +45,7 @@ public class TestLda {
 	public static void main(String[] args) {
 	if (args.length != 5)
         {
-            System.err.println("\nUSAGE: java LdaGibbsSampler <documentTermIndexFile> <vocabFile> <K> <alpha> <beta>\n");
+            System.err.println("\nUSAGE: java TestLda <documentTermIndexFile> <vocabFile> <K> <alpha> <beta>\n");
             System.exit(0);
         }
         
@@ -82,7 +82,7 @@ public class TestLda {
 			TopicUtils.saveTopTopicWords(phi, cr.getVocab(), "./LDA_top-topic-words", 10);
 
 		}catch (IOException ex){
-           		System.err.println("\nIOException ...\nUSAGE: java LdaGibbsSampler <documentTermIndexFile> <vocabFile> <K> <alpha> <beta>\n");
+           		System.err.println("\nIOException ...\nUSAGE: java TestLda <documentTermIndexFile> <vocabFile> <K> <alpha> <beta>\n");
 		        System.err.println(ex.getMessage());
 		}catch (NoSuchMethodException ex){
 		        System.err.println(ex.getMessage());
